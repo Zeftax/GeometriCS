@@ -197,7 +197,7 @@ namespace GeometriCS.structs
         /// <returns><c>true</c> if the vectors are different. Otherwise <c>false</c></returns>
         public static bool operator !=(Vector2d a, Vector2d b)
         {
-            return !Utils.DoubleEquals(a.X, b.X) && Utils.DoubleEquals(a.Y, b.Y);
+            return !(Utils.DoubleEquals(a.X, b.X) && Utils.DoubleEquals(a.Y, b.Y));
         }
 
         /// <summary>
